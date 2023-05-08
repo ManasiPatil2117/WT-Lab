@@ -1,0 +1,30 @@
+.abstract-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	width: 100%;
+	align-items: center;
+}
+
+.abstract-text{
+	font-size: 70px;
+	font-weight: 700;
+	text-align: center;
+	width: 50%;
+}
+
+.abstract-image{
+	display: flex;
+	justify-content: center;
+	width: 50%;
+}
+
+@media screen and (max-width: 600px) {
+	.abstract-container{
+		padding: 30px;
+		flex-direction: column;
+	}
+	.abstract-text{
+		width: 100%;
+	}
+  }

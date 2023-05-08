@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Electricity Bill</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <center>
+          <h1>Electricity Bill</h1>
+        </center>
+      </div>
+      <div class="header">
+        <h2>Bill Transcript</h2>
+      </div>
+      <div class="content">
+        <div class="account-info">
+          <h2>Account Information</h2>
+          <table>
+            <tr>
+              <td>Account Number:</td>
+              <td>2394872389</td>
+            </tr>
+            <tr>
+              <td>Bill Date:</td>
+              <td>February 23, 2023</td>
+            </tr>
+            <tr>
+              <td>Due Date:</td>
+              <td>March 20, 2023</td>
+            </tr>
+          </table>
+        </div>
+        <div class="usage-info">
+          <h2>Usage Information</h2>
+          <table>
+            <tr>
+              <td>Previous Units:</td>
+              <td>28990 kWh</td>
+            </tr>
+
+            <tr>
+              <td>Units Consumed:</td>
+              <td>300 kWh</td>
+            </tr>
+          </table>
+        </div>
+        <div class="rate-info">
+          <h2>Billing Rates</h2>
+          <table>
+            <tr>
+              <td>0-50:</td>
+              <td>₨ 3.5</td>
+            </tr>
+            <tr>
+              <td>50-150:</td>
+              <td>₨ 4.00</td>
+            </tr>
+            <tr>
+              <td>150-250:</td>
+              <td>₨ 5.20</td>
+            </tr>
+            <tr>
+              <td>Above 250:</td>
+              <td>₨ 6.50</td>
+            </tr>
+          </table>
+        </div>
+        <div>
+          <h2 id="amt">Amount to Pay -</h2>
+        </div>
+        <button onclick="printpdf()">Print</button>
+      </div>
+    </div>
+    <script>
+      document.getElementById("amt").innerHTML =
+        document.getElementById("amt").innerHTML +
+        localStorage.getItem("mybill");
+      function printpdf() {
+        window.print();
+      }
+    </script>
+  </body>
+</html>

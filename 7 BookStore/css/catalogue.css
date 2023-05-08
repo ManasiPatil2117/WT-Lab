@@ -1,0 +1,96 @@
+.catalogue-container{
+	display: flex;
+	padding: 20px;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.book{
+	border: 3px solid rgb(207, 133, 133);
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 0px;
+	margin: 20px 10px;
+	background-color: white;
+
+}
+.book:hover{
+	cursor: pointer;
+}
+
+.book-img{
+	height: 400px;
+}
+.book-img-container{
+	background-color: white;
+	padding: 10px;
+}
+
+.book-details{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.book-info{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	background-color: white;
+}
+
+.book-name{
+	margin: 0px 20px;
+	font-size: 17px;
+	font-weight: bold;
+	background-color: white;
+
+}
+
+.book-cost{
+	font-size: 20px;
+	font-weight: 500;
+	margin: 5px;
+	background-color: white;
+}
+
+.purchase-options{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	background-color: white;
+}
+
+.buy{
+	background-color: rgb(20, 215, 20);
+	border: none;
+	border-radius: 5px;
+	color: white;
+	padding: 7px;
+	margin: 3px;
+}
+.buy:hover{
+	cursor: pointer;
+	background-color: rgb(36, 243, 36);
+}
+
+
+.atc{
+	background-color: rgb(85, 50, 239);
+	border: none;
+	border-radius: 5px;
+	color: white;
+	padding: 7px;
+	margin: 3px;
+}
+.atc:hover{
+	cursor: pointer;
+	background-color: rgb(121, 2, 2);
+}
